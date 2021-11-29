@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.voices">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.ar" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        >
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value=""/>
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.LoginActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.RegisterActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.ChangePwdActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.ConfirmActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.CongratsActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".sign_in_sign_up.ForgotPwdActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".main_ui.VoicesActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".main_ui.CreatePostActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".kotlin.helloar.ArActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>
